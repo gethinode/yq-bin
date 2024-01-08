@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/yq-bin",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "yqVersion": "4.40.5",
   "description": "Binary wrapper for yq (work in progress)",
   "repository": {
