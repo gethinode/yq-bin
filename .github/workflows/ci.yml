@@ -71,25 +71,25 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
-  publish:
-    name: Publish on npm
-    if: github.repository == 'gethinode/yq-bin' && startsWith(github.ref, 'refs/tags/')
-    needs: [lint, test]
-    runs-on: ubuntu-latest
+  # publish:
+  #   name: Publish on npm
+  #   if: github.repository == 'gethinode/yq-bin' && startsWith(github.ref, 'refs/tags/')
+  #   needs: [lint, test]
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
+  #   steps:
+  #     - name: Clone repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         persist-credentials: false
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_LTS }}
-          registry-url: 'https://registry.npmjs.org'
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ env.NODE_LTS }}
+  #         registry-url: 'https://registry.npmjs.org'
 
-      - name: Publish on npm
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  #     - name: Publish on npm
+  #       run: npm publish
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
