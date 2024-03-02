@@ -7,3 +7,8 @@ updates:
       day: monday
       time: "11:00"
       timezone: Europe/Athens
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    versioning-strategy: increase
