@@ -21,7 +21,7 @@
     "yq": "bin/cli.js"
   },
   "dependencies": {
-    "@xhmikosr/bin-wrapper": "^12.0.0",
+    "@xhmikosr/bin-wrapper": "^13.0.5",
     "package-config": "^5.0.0"
   },
   "devDependencies": {
