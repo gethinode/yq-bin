@@ -25,7 +25,7 @@
     "package-config": "^5.0.0"
   },
   "devDependencies": {
-    "@xhmikosr/bin-check": "^7.0.3",
+    "@xhmikosr/bin-check": "^7.1.0",
     "c8": "^10.1.2",
     "uvu": "^0.5.6",
     "xo": "^0.59.3"
