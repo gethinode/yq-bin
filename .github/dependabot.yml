@@ -12,3 +12,9 @@ updates:
     schedule:
       interval: "daily"
     versioning-strategy: increase
+    # This repo installs with npm, which has no minimum-release-age equivalent,
+    # so cooldown is the only release-age gate. Keep it >= 2 days.
+    cooldown:
+      default-days: 2
+      exclude:
+        - "@gethinode/*" # our own packages ship without delay
