@@ -49,7 +49,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
   "xo": {
     "space": true,
@@ -80,6 +80,11 @@
       ],
       "unicorn/prefer-top-level-await": "off",
       "unicorn/prevent-abbreviations": "off"
+    }
+  },
+  "overrides": {
+    "eslint-plugin-unicorn": {
+      "@eslint/plugin-kit": "^0.3.5"
     }
   }
 }

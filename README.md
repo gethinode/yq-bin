@@ -42,7 +42,7 @@
 
 ## Prerequisites
 
-This package requires `npm`. You are recommended to install [Node.js][nodejs], which includes `npm`.
+This package requires Node.js 20 or later and `npm`. You are recommended to install [Node.js][nodejs], which includes `npm`.
 
 ## Installation
 
