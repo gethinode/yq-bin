@@ -34,8 +34,10 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@gethinode'
       - name: Install dependencies
-        run: yarn
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish package
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
