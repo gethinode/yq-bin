@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/yq-bin",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "yqVersion": "4.45.1",
   "description": "Binary wrapper for yq",
   "repository": {
@@ -83,8 +83,6 @@
     }
   },
   "overrides": {
-    "eslint-plugin-unicorn": {
-      "@eslint/plugin-kit": "^0.3.5"
-    }
+    "@eslint/plugin-kit@<0.3.4": "^0.3.5"
   }
 }
